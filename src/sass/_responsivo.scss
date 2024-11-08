@@ -1,0 +1,16 @@
+@media (width < 768px) {
+    .menu {
+        display: block;
+    }
+
+    input[type="checkbox"]:checked~.navegacao {
+        display: flex;
+    }
+
+    input[type="checkbox"]:checked~label .menu {
+        position: fixed;
+        top: 35px;
+        right: 30px;
+        z-index: 2;   
+    }
+}
